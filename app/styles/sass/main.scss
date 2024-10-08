@@ -1,0 +1,1782 @@
+@import '_config.scss';
+
+input:active,
+input:focus,
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+textarea {
+  resize: none;
+}
+a, a:focus, a:active {
+  outline: none;
+}
+a, a:hover {
+  text-decoration: none;
+}
+button, button:focus, button:active {
+  outline: none;
+}
+img {
+  border-style: none;
+}
+.full-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.clear-both {
+  clear: both;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.hidden-desktop {
+  display: none;
+}
+.position-relative {
+  position: relative;
+}
+.container-fluid {
+  --bs-gutter-x: 160px;
+}
+.orangecolor {
+  color: $orangecolor;
+}
+.greencolor {
+  color: $greencolor;
+}
+.section {
+  padding: 80px 0 50px 0;
+}
+.section-title {
+  margin: 0 0 30px 0;
+  font-family: 'unbounded-bold';
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  .logo {
+    width: 100px;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  &.header-white {
+    position: static;
+    background-color: #fff;
+    backdrop-filter: none;
+  }
+  .top-menu {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .menu-item {
+    margin: 0 30px;
+  }
+  .menu-item__link {
+    font-size: 24px;
+    color: $textcolor;
+    line-height: 1.3;
+    text-transform: uppercase;
+    transition: color .3s;
+  }
+  .menu-item__link:hover {
+    color: $orangecolor;
+  }
+}
+
+.main-section {
+  position: relative;
+  height: 840px;
+  margin: 0 0 45px 0;
+  background-image: url(../images/main-bg-1920.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  .main-title {
+    margin: 0 0 10px 0;
+    padding: 352px 0 0 0;
+    font-family: 'unbounded-bold';
+    font-size: 132px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .main-subtitle {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.3;
+  }
+  .mountains {
+    position: absolute;
+    left: 0;
+    bottom: -470px;
+    width: 100%;
+    height: 690px;
+    background-image: url(../images/mountains-bg-1920.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+  }
+}
+
+.why-we-section {
+  position: relative;
+  z-index: 3;
+  .advantages {
+    padding: 60px 0 20px 0;
+    background-color: $basiccolor;
+    color: #fff;
+  }
+  .advantages-item {
+    margin: 0 0 40px 0;
+  }
+  .advantages-item__image {
+    height: 73px;
+  }
+  .advantages-item__title {
+    margin: 0 0 20px 0;
+    font-family: unbounded-medium;
+    font-size: 28px;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+  .advantages-item__text {
+    font-family: unbounded-light;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+
+.off-road-tour-section {
+  .price {
+    display: flex;
+  }
+  .price-item {
+    position: relative;
+    width: 50%;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+  }
+  .price-item__content {
+    margin: 0 0 30px 0;
+  }
+  .price-item__title {
+    margin: 0 0 20px 0;
+    font-family: unbounded-medium;
+    font-size: 42px;
+  }
+  .price-item__text {
+    margin: 0 0 15px 0;
+    font-family: unbounded-light;
+    font-size: 22px;
+  }
+  .textmedium {
+    font-family: unbounded-medium;
+  }
+  .price-item__description {
+    margin: 0 0 15px 0;
+    font-family: unbounded-light;
+    font-size: 14px;
+  }
+  .price-item__include {
+    font-family: unbounded-light;
+    font-size: 22px;
+  }
+  .list {
+    margin: 15px 0 0 0;
+    padding: 0 0 0 20px;
+  }
+  .price-item-public {
+    background-image: url(../images/public-bg-1920.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .price-item-private {
+    background-image: url(../images/private-bg-1920.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .book-tour-btn {
+    display: block;
+    width: 388px;
+    height: 76px;
+    padding: 0;
+    border: none;
+    background-color: $orangecolor;
+    font-family: unbounded-light;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+.our-cars-section {
+  .our-cars-item {
+    margin: 0 0 20px 0;
+  }
+  .our-cars-item-image {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+    padding: 0 0 98% 0;
+  }
+  .our-cars-item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-section {
+  padding: 80px 0;
+  background-color: $basiccolor;
+  color: #fff;
+  .description {
+    font-family: unbounded-light;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+
+.gallery-section {
+  .gallery-item {
+    position: relative;
+    height: 0;
+    margin: 0 0 24px 0;
+    padding: 0 0 98% 0;
+  }
+  .gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .view-more-btn {
+    display: none;
+    margin: 0 auto 30px auto;
+    padding: 0 5px;
+    border: none;
+    background-color: #fff;
+    font-family: 'unbounded-bold';
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.contacts-section {
+  padding: 20px 0 0 0;
+  .team {
+    height: 100%;
+  }
+  .team img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contacts {
+    padding: 40px 50px;
+    background-color: $basiccolor;
+    color: #fff;
+  }
+  .contacts-title {
+    margin: 0 0 11px 0;
+    font-family: 'unbounded-bold';
+    font-size: 64px;
+    text-transform: uppercase;
+  }
+  .write-us,
+  .address,
+  .phone {
+    font-size: 32px;
+  }
+  .write-us {
+    margin: 0 0 30px 0;
+  }
+  .address {
+    margin: 0 0 20px 0;
+  }
+  .phone {
+    display: block;
+    width: max-content;
+    margin: 0 0 40px 0;
+    color: #fff;
+  }
+  .messengers {
+    display: flex;
+  }
+  .messenger-item {
+    position: relative;
+    display: flex;
+    height: 120px;
+    padding: 0 25px;
+    align-items: center;
+  }
+  .whatsapp {
+    width: 335px;
+    margin: 0;
+  }
+  .telegram {
+    width: 305px;
+  }
+  .title {
+    margin: 0 10px 0 0;
+    font-size: 32px;
+    color: #fff;
+  }
+  .arrow {
+    width: 75px;
+    flex-shrink: 0;
+  }
+}
+
+// footer
+.footer {
+  margin: 110px 0 0 0;
+  padding: 90px 0 40px 0;
+  background-color: $basiccolor;
+  .footer-top {
+    display: flex;
+    margin: 0 0 36px 0;
+    align-items: center;
+  }
+  .logo {
+    width: 100px;
+    margin: 0 50px 0 0;
+    flex-shrink: 0;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .flex-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menu-item {
+    margin: 0 20px;
+  }
+  .menu-item:first-child {
+    margin-left: 0;
+  }
+  .menu-item__link {
+    font-size: 18px;
+    color: #fff;
+    line-height: 2.3;
+    text-transform: uppercase;
+    transition: color .3s;
+  }
+  .menu-item__link:hover {
+    color: $orangecolor;
+  }
+  .footer-bottom {
+    font-family: unbounded-light;
+    font-size: 12px;
+    color: #fff;
+    line-height: 2.5;
+  }
+  .copyright {
+    text-transform: uppercase;
+  }
+  .privacy-policy-wrapper {
+    text-align: center;
+  }
+  .privacy-policy-btn {
+    color: #fff;
+  }
+  .developer {
+    text-align: right;
+  }
+  .developer a {
+    color: #fff;
+  }
+}
+
+// mobile menu 
+.burger-menu-wrapper {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  display: none;
+  width: 56px;
+  height: 56px;
+  padding: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  .burger-menu {
+    position: relative;
+    height: 100%;
+  }
+  span,
+  .burger-menu:before,
+  .burger-menu:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 42px;
+    height: 4px;
+    margin: 0 0 0 auto;
+    border-radius: 2px;
+    background-color: $basiccolor;
+    transition: all .5s;
+  }
+  .burger-menu:before {
+    top: 6px;
+  }
+  span {
+    top: 19px;
+  }
+  .burger-menu:after {
+    top: 32px;
+  }
+  .close span {
+    display: none;
+  }
+  .close:before,
+  .close:after {
+    top: 19px;
+    background-color: $orangecolor;
+  }
+  .close:before {
+    transform: rotate(-45deg);
+  }
+  .close:after {
+    transform: rotate(45deg);
+  }
+}
+
+// mobile menu
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 18px 12px 20px 12px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  transition: all 1s;
+  .logo {
+    width: 80px;
+    margin: 0 0 35px 0;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .logo-link {
+    display: block;
+  }
+  .menu {
+    margin: 0 0 40px 0;
+  }
+  .menu-item {
+    margin: 0 0 15px 0;
+  }
+  .menu-item a {
+    font-size: 22px;
+    color: $textcolor;
+    text-transform: uppercase;
+  }
+  .phone {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+  }
+  .phone .phone-link {
+    color: $orangecolor;
+    text-decoration: underline;
+  }
+  .messenger-item {
+    position: relative;
+    width: 240px;
+    height: 60px;
+    margin: 0 0 20px 0;
+    padding: 0 30px;
+    background-color: $greencolor;
+  }
+  .flex-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 20px;
+    color: #fff;
+  }
+  .arrow {
+    width: 38px;
+  }
+  &.mobile-menu-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// modal 
+.modal-window {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  &.active {
+    display: block;
+  }
+  .modal-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5%;
+    height: 100%;
+    padding: 0 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+  .modal-wrapper.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-area {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 64px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  }
+  .modal-close {
+    position: absolute;
+    top: 35px;
+    right: 28px;
+    cursor: pointer;
+  }
+  .close {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border-radius: 3px;
+  }
+  .close:before,
+  .close:after { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 9px;
+    width: 3px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #a9a9a9;
+    transition: background-color .3s;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .modal-title {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .label {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #A9A9A9;
+    text-transform: uppercase;
+  }
+  .input-field {
+    width: 100%;
+    margin: 0 0 25px 0;
+    padding: 25px 30px;
+    border: 1px solid #DEDEDE;
+    font-family: inherit;
+    font-size: 24px;
+  }
+  .input-number {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  .input-number::-webkit-inner-spin-button,
+  .input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  .first-input-field {
+    margin: 0 0 35px 0;
+  }
+  .checkbox-text {
+    display: block;
+    font-family: unbounded-light;
+    font-size: 18px;
+    color: $textcolor;
+    line-height: 1.6;
+  }
+  .privacy-policy-btn {
+    color: $orangecolor;
+  }
+  .submit-btn {
+    display: block;
+    width: 100%;
+    height: 76px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: none;
+    background-color: $orangecolor;
+    font-family: unbounded-light;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .submit-btn:disabled {
+    color: #A9A9A9;
+  }
+  .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+  }
+  .custom-checkbox + .custom-checkbox-label::before {
+    content: '';
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    margin: 3px 10px 10px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 70%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .custom-checkbox:checked + .custom-checkbox-label::before {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='211F1F' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+  .custom-checkbox-label {
+    display: block;
+  }
+}
+
+// Callback modal
+.callback-modal {
+  .modal-area {
+    padding: 50px 64px;
+    background: url(../images/modal-bg.webp) top no-repeat;
+    background-size: cover;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .title-wrapper,
+  .form {
+    width: 50%;
+  }
+  .title-wrapper {
+    padding: 0 70px 0 0;
+  }
+  .form {
+    padding: 0 0 0 70px;
+  }
+  .title {
+    margin: 0 0 20px 0;
+    font-family: 'unbounded-bold';
+    font-size: 63px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    font-family: unbounded-light;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .form-group {
+    display: flex;
+    margin: 0 0 25px 0;
+  }
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+  }
+  .radio-wrapper {
+    display: flex;
+    margin: 0 70px 0 0;
+    align-items: center;
+  }
+  .radio-text {
+    margin: 0 15px 0 0;
+  }
+  .custom-radio + .custom-radio-label {
+    display: block;
+    width: 28px;
+    height: 28px;
+    height: 28px;
+    border: 1px solid $basiccolor;
+    border-radius: 14px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  .custom-radio + .custom-radio-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .custom-radio:checked + .custom-radio-label::before {
+    background-color: $orangecolor;
+  }
+}
+
+// Privacy policy modal
+.privacy-policy-modal {
+  .modal-area {
+    max-height: auto;
+    height: 90%;
+  }
+  .modal-title {
+    font-size: 20px;
+  }
+  .modal-content {
+    height: 80%;
+    padding: 0 30px 0 0;
+    overflow: auto;
+  }
+}
+
+.we-use-cookie {
+  position: fixed;
+  right: 0;
+  bottom: 25px;
+  left: 0;
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+  &.show {
+    display: block;
+  }
+  .we-use-cookie-wrapper {
+    display: flex;
+    max-width: 715px;
+    margin: 0 80px 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #484848;
+    align-items: center;
+  }
+  .we-use-cookie-text {
+    padding: 0 20px 0 0;
+    font-size: 12px;
+    color: #E8E8E8;
+  }
+  .we-use-cookie-close {
+    display: block;
+    width: 93px;
+    height: 45px;
+    padding: 0;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    background-color: #484848;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width : 1600px) {
+  .main-section {
+    .main-title {
+      font-size: 122px;
+    }
+  }
+}
+
+@media only screen and (max-width : 1500px) {
+  .main-section {
+    .main-title {
+      font-size: 113px;
+    }
+  }
+}
+
+@media only screen and (max-width : 1400px) {
+  .section {
+    padding: 70px 0 40px 0;
+  }
+
+  .section-title {
+    font-size: 58px;
+  }
+
+  .main-section {
+    .main-title {
+      font-size: 96px;
+    }
+    .main-subtitle {
+      font-size: 32px;
+    }
+  }
+
+  .why-we-section {
+    .advantages-item__title {
+      height: 73px;
+      margin: 0 0 15px 0;
+      font-size: 26px;
+    }
+    .advantages-item__text {
+      font-size: 21px;
+    }
+  }
+
+  .off-road-tour-section {
+    .price-item {
+      padding: 40px;
+    }
+    .price-item__title {
+      font-size: 39px;
+    }
+    .price-item__text {
+      font-size: 20px;
+    }
+    .price-item__include {
+      font-size: 20px;
+    }
+    .book-tour-btn {
+      font-size: 26px;
+      width: 378px;
+      height: 70px;
+    }
+  }
+
+  .gallery-section {
+    .view-more-btn {
+      font-size: 40px;
+    }
+  }
+
+  .contacts-section {
+    .contacts {
+      padding: 35px 40px;
+    }
+    .contacts-title {
+      font-size: 60px;
+      line-height: 1;
+    }
+    .write-us,
+    .address,
+    .phone {
+      font-size: 28px;
+    }
+    .write-us {
+      margin: 0 0 15px 0;
+    }
+    .messengers {
+      justify-content: space-between;
+    }
+    .messenger-item {
+      width: 48%;
+      height: 100px;
+      padding: 0 17px;
+    }
+    .title {
+      font-size: 24px;
+    }
+  }
+
+  .callback-modal {
+    .modal-area {
+      padding: 40px 54px;
+    }
+    .title-wrapper {
+      padding: 0 50px 0 0;
+    }
+    .form {
+      padding: 0 0 0 50px;
+    }
+    .title {
+      font-size: 50px;
+    }
+  }
+
+  .modal-window {
+    .custom-checkbox + .custom-checkbox-label::before {
+      width: 15px;
+      height: 15px;
+    }  
+    .checkbox-text {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  .section {
+    padding: 60px 0 30px 0;
+  }
+
+  .section-title {
+    font-size: 50px;
+  }
+
+  .header {
+    .menu-item {
+      margin: 0 20px;
+    }
+    .menu-item:first-child {
+      margin-left: 0;
+    }
+    .menu-item:last-child {
+      margin-right: 0;
+    }
+    .menu-item__link {
+      font-size: 22px;
+    }
+  }
+
+  .main-section {
+    height: 740px;
+    margin: 0 0 35px 0;
+    background-image: url(../images/main-bg-1200.webp);
+    .main-title {
+      padding: 302px 0 0;
+      font-size: 75px;
+    }
+    .main-subtitle {
+      font-size: 28px;
+    }
+    .mountains {
+      bottom: -450px;
+      height: 620px;
+      background-image: url(../images/mountains-bg-1200.webp);
+    }
+  }
+
+  .why-we-section {
+    .advantages {
+      padding: 50px 0 10px 0;
+    }
+    .advantages-item__image {
+      height: 56px;
+      margin: 0 0 10px 0;
+    }
+    .advantages-item__image img {
+      max-height: 100%;
+    }
+    .advantages-item__title {
+      height: 60px;
+      font-size: 23px;
+    }
+    .advantages-item__text {
+      font-size: 19px;
+    }
+  }
+
+  .off-road-tour-section {
+    .price {
+      display: block;
+    }
+    .price-item {
+      width: 100%;
+      padding: 40px 40px 70px 40px;
+    }
+    .price-item-public {
+      margin: 0 0 20px 0;
+    }
+    .book-tour-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .about-section {
+    padding: 60px 0;
+    .description {
+      font-size: 22px;
+    }
+  }
+
+  .gallery-section {
+    .view-more-btn {
+      font-size: 34px;
+    }
+  }
+
+  .contacts-section {
+    .contacts {
+      padding: 25px 30px;
+    }
+    .contacts-title {
+      font-size: 50px;
+    }
+    .write-us,
+    .address,
+    .phone {
+      font-size: 24px;
+    }
+    .write-us {
+      margin: 0 0 12px 0;
+    }
+    .address {
+      margin: 0 0 10px 0;
+    }
+    .phone {
+      margin: 0 0 30px;
+    }
+    .messenger-item {
+      height: 80px;
+      padding: 0 10px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .arrow {
+      width: 55px;
+    }
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .callback-modal {
+    .modal-area {
+      padding: 30px 44px;
+    }
+    .modal-close {
+      right: 20px;
+      top: 20px;
+    }
+    .title-wrapper {
+      padding: 0 30px 0 0;
+    }
+    .form {
+      padding: 0 0 0 30px;
+    }
+    .title {
+      font-size: 38px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .input-field {
+      font-size: 18px;
+    }
+    .custom-radio + .custom-radio-label {
+      width: 20px;
+      height: 20px;
+    }
+    .custom-radio + .custom-radio-label::before {
+      width: 12px;
+      height: 12px;
+    }  
+    .submit-btn {
+      font-size: 20px;
+    }
+  }
+
+  .modal-window {
+    .checkbox-text {
+      font-size: 14px;
+    } 
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .container-fluid {
+    --bs-gutter-x: 24px;
+  }
+
+  .section {
+    padding: 50px 0 20px 0;
+  }
+
+  .section-title {
+    margin: 0 0 20px 0;
+    font-size: 46px;
+  }
+
+  .header {
+    .logo {
+      width: 80px;
+    }
+    .logo img {
+      width: 80px;
+      height: 80px;
+    }
+    .menu-item__link {
+      font-size: 19px;
+    }
+  }
+
+  .main-section {
+    height: 100%;
+    margin: 0;
+    background-image: url(../images/main-bg-992.webp);
+    .main-subtitle {
+      padding: 0 0 200px 0;
+      font-size: 25px;
+    }
+    .mountains {
+      bottom: -450px;
+      height: 620px;
+    }
+  }
+
+  .why-we-section {
+    .advantages-item {
+      margin: 0 0 30px 0;
+    }
+    .advantages-item__image {
+      height: 50px;
+    }
+    .advantages-item__title {
+      height: 55px;
+      margin: 0 0 15px 0;
+      font-size: 21px;
+    }
+    .advantages-item__text {
+      font-size: 17px;
+    }
+  }
+
+  .off-road-tour-section {
+    .price-item {
+      padding: 30px 30px 60px 30px;
+    }
+    .price-item__title {
+      font-size: 37px;
+      line-height: 1.2;
+    }
+    .price-item__text {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+    }
+    .price-item__description {
+      margin: 0 0 12px 0;
+    }
+    .list {
+      margin: 12px 0 0 0;
+    }
+    .price-item__include {
+      font-size: 18px;
+    }
+    .book-tour-btn {
+      height: 65px;
+      font-size: 24px;
+    }
+  }    
+
+  .about-section {
+    padding: 40px 0;
+    .description {
+      font-size: 20px;
+    }
+  }
+
+  .gallery-section {
+    .view-more-btn {
+      font-size: 30px;
+    }
+  }
+
+  .contacts-section {
+    .contacts {
+      padding: 20px 25px;
+    }
+    .contacts-title {
+      font-size: 40px;
+    }
+    .write-us,
+    .address,
+    .phone {
+      font-size: 22px;
+    }
+    .write-us {
+      margin: 0 0 10px 0;
+    }
+    .address {
+      margin: 0 0 8px 0;
+    }
+    .phone {
+      margin: 0 0 20px;
+    }
+    .messenger-item {
+      height: 65px;
+    }
+    .title {
+      font-size: 18px;
+    }
+    .arrow {
+      width: 50px;
+    }
+  }
+
+  .footer {
+    margin-top: 20px;
+    .flex-container {
+      justify-content: center;
+    }
+    .privacy-policy-wrapper {
+      margin: 0 0 20px 0;
+      text-align: left;
+    }
+    .company-info {
+      margin: 0 0 20px 0;
+    }
+    .developer {
+      text-align: left;
+    }
+  }
+
+  .we-use-cookie {
+    .we-use-cookie-wrapper {
+      margin-right: 12px;
+    }
+  }
+
+  .callback-modal {
+    .flex-container {
+      display: block;
+    }
+    .form,
+    .title-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+    .title {
+      margin: 0 0 30px 0;
+      font-size: 36px;
+      text-align: center;
+    }
+    .title span {
+      display: block;
+    }
+    .subtitle {
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+    .input-field,
+    .subtitle {
+      font-size: 18px;
+    }
+    .input-field {
+      margin: 0 0 25px 0;
+      padding: 15px 20px;
+    }
+    .custom-radio + .custom-radio-label {
+      width: 22px;
+      height: 22px;
+      padding: 2px;
+    }
+    .custom-radio + .custom-radio-label::before {
+      height: 16px;
+      width: 16px;
+    }
+    .submit-btn {
+      height: 56px;
+      font-size: 20px;
+    }
+  }
+
+  .modal-window {
+    .checkbox-text {
+      font-size: 12px;
+      line-height: 2.2;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+  .hidden-desktop {
+    display: block;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .header {
+    padding: 18px 0;
+    background-color: #fff;
+    backdrop-filter: none;
+  }
+
+  .main-section {
+    background-image: url(../images/main-bg-768.webp);
+    .main-title {
+      padding: 220px 0 0 0;
+      font-size: 70px;
+    }
+    .main-subtitle {
+      padding: 0 0 160px 0;
+      font-size: 18px;
+    }
+    .mountains {
+      height: 590px;
+      background-image: url(../images/mountains-bg-768.webp);
+    }
+  }
+
+  .off-road-tour-section {
+    .price-item {
+      padding: 25px 25px 50px 25px;
+    }
+    .price-item-public {
+      background-image: url(../images/public-bg-768.webp);
+    }
+    .price-item-private {
+      background-image: url(../images/private-bg-768.webp);
+    }
+    .price-item__title {
+      margin: 0 0 15px 0;
+      font-size: 34px;
+    }
+    .price-item__text {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+    .price-item__description {
+      margin: 0 0 10px 0;
+    }
+    .price-item__include {
+      font-size: 16px;
+    }
+    .list {
+      margin: 10px 0 0 0;
+    }
+    .book-tour-btn {
+      height: 55px;
+      font-size: 22px;
+    }
+    
+    
+  }
+
+  .about-section {
+    .description {
+      font-size: 18px;
+    }
+  }
+
+  .contacts-section {
+    .container-fluid {
+      --bs-gutter-x: 0;
+    }
+    .row {
+      --bs-gutter-x: 0;
+    }
+    .contacts {
+      padding: 40px 12px;
+    }
+    .contacts-title {
+      font-size: 30px;
+    }
+    .write-us,
+    .address,
+    .phone {
+      font-size: 20px;
+    }
+    .write-us {
+      margin: 0 0 10px 0;
+    }
+    .address {
+      margin: 0 0 8px 0;
+    }
+    .phone {
+      margin: 0 0 20px 0;
+    }
+    .messengers {
+      justify-content: flex-start;
+    }
+    .messenger-item {
+      width: auto;
+    }
+    .whatsapp {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  .footer {
+    margin-top: 0;
+    .footer-top {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .logo {
+      margin: 0 auto;
+    }
+    .privacy-policy-wrapper,
+    .company-info,
+    .developer {
+      text-align: center;
+    }
+  }
+
+  .we-use-cookie {
+    .we-use-cookie-wrapper {
+      margin: 0 12px;
+    }
+  }
+
+  .callback-modal {
+    .modal-area {
+      padding: 40px 30px 30px 30px;
+    }
+    .title {
+      font-size: 29px;
+    }
+    .input-field {
+      margin: 0 0 15px 0;
+      font-size: 16px;
+    }
+    .subtitle {
+      font-size: 16px;
+    }
+    .form-group {
+      margin: 0 0 15px 0;
+      gap: 25px;
+    }
+    .radio-wrapper {
+      margin: 0;
+    }
+    .radio-text {
+      margin: 0 10px 0 0;
+      font-size: 14px;
+    }
+    .custom-radio + .custom-radio-label {
+      width: 18px;
+      height: 18px;
+    }
+    .custom-radio + .custom-radio-label::before {
+      width: 14px;
+      height: 14px;
+    }    
+    .submit-btn {
+      font-size: 18px;
+    }
+  }
+ 
+  .privacy-policy-modal {
+    .modal-area {
+      height: 82%;
+    }
+  }
+
+  .modal-window {
+    .modal-wrapper {
+      padding: 0 60px;
+    }
+    .custom-checkbox + .custom-checkbox-label::before {
+      width: 13px;
+      height: 13px;
+    }
+    .checkbox-text {
+      font-size: 11px;
+      line-height: 1.2;
+    }
+  }    
+}
+
+@media only screen and (max-width : 576px) {
+
+  .section {
+    padding: 40px 0 20px 0;
+  }
+
+  .main-section {
+    background-image: url(../images/main-bg-576.webp);
+    .main-title {
+      padding: 190px 0 0 0;
+      font-size: 65px;
+    }
+    .mountains {
+      background-image: url(../images/mountains-bg-576.webp);
+    }
+  }
+
+  .why-we-section {
+    .advantages {
+      padding: 30px 0 5px 0;
+    }
+    .advantages-item__title {
+      height: auto;
+    }
+    .advantages-item__text {
+      font-size: 16px;
+    }
+  }
+
+  .off-road-tour-section {
+    .price-item-public {
+      background-image: url(../images/public-bg-576.webp);
+    }
+    .price-item-private {
+      background-image: url(../images/private-bg-576.webp);
+    }
+  }
+
+  .we-use-cookie {
+    .we-use-cookie-wrapper {
+      padding: 12px 15px;
+    }
+    .we-use-cookie-text {
+      padding: 0 15px 0 0;
+    }
+    .we-use-cookie-close {
+      width: 73px;
+    }
+  }
+
+  .modal-window { 
+    .modal-wrapper {
+      padding: 0 40px;
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .section-title {
+    font-size: 27px;
+  }
+
+  .main-section {
+    background-image: url(../images/main-bg-480.webp);
+    .main-title {
+      font-size: 58px;
+    }
+    .main-subtitle {
+      padding: 0 0 140px 0;
+    }
+    .mountains {
+      background-image: url(../images/mountains-bg-480.webp);
+    }
+  }
+
+  .why-we-section {
+    padding-bottom: 0;
+    .advantages-item__image {
+      width: 50px;
+      height: 40px;
+    }
+    .advantages-item__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .off-road-tour-section {
+    .price-item {
+      padding: 20px 20px 50px 20px;
+    }
+    .price-item__title {
+      font-size: 26px;
+    }
+    .price-item__text {
+      font-size: 15px;
+    }
+    .price-item__include {
+      font-size: 15px;
+    }
+  }
+
+  .about-section {
+    .description {
+      font-size: 15px;
+    }
+  }
+
+  .contacts-section {
+    .contacts {
+      text-align: center;
+    }
+    .phone {
+      margin: 0 auto 20px auto;
+    }
+    .messengers {
+      display: block;
+    }
+    
+    .messenger-item {
+      width: max-content;
+      margin: 0 auto 15px auto;
+    }
+    .title {
+      font-size: 20px;
+    }
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .we-use-cookie {
+    .we-use-cookie-text {
+      font-size: 10px;
+    }
+    .we-use-cookie-close {
+      width: 53px;
+      font-size: 14px;
+    }
+  }
+
+  .callback-modal {
+    .title {
+      margin: 0 0 20px 0;
+      font-size: 22px;
+    }
+    .input-field {
+      font-size: 15px;
+    }
+    .subtitle {
+      font-size: 15px;
+    }
+    .submit-btn {
+      height: 50px;
+    }
+  }
+
+  .modal-window { 
+    .modal-wrapper {
+      top: 10px;
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (max-width : 360px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .main-section {
+    background-image: url(../images/main-bg-360.webp);
+    .main-title {
+      font-size: 55px;
+    }
+    .main-subtitle {
+      padding: 0 0 130px 0;
+    }
+    .mountains {
+      background-image: url(../images/mountains-bg-360.webp);
+    }
+  }
+
+  .off-road-tour-section {
+    .price-item {
+      padding: 17px 17px 50px 17px;
+    }
+    .book-tour-btn {
+      font-size: 20px;
+    }
+    .price-item__title {
+      font-size: 22px;
+    }
+  }
+
+  .callback-modal {
+    .title {
+      font-size: 18px;
+    }
+    .input-field,
+    .callback-modal .subtitle {
+      font-size: 15px;
+    }
+    .subtitle {
+      margin: 0 0 20px 0;
+    }
+    .input-field {
+      padding: 10px 15px;
+    }
+  }
+}

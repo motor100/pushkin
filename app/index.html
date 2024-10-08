@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кафе Пушкин</title>
+  <meta name="description" content="Кафе Пушкин">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any">
+  <link rel="preload" as="style" href="css/app.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-fluid">
+
+    </div>
+  </header>
+
+  <div class="main-section">
+    <div class="container-fluid">
+      
+  </div>
+
+
+
+  <div id="contacts-section" class="contacts-section">
+    <div class="container-fluid">
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-fluid">
+
+    </div>
+  </footer>
+
+  <div class="burger-menu-wrapper hidden-desktop">
+    <div class="burger-menu">
+      <span></span>
+    </div>
+  </div>
+  <div class="mobile-menu hidden-desktop">
+    <div class="logo">
+      <a href="/" class="logo-link">
+        <img src="images/logo.webp" alt="">
+      </a>
+    </div>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="/#why-we-section" class="menu-item__link">Почему мы</a>
+      </div>
+      <div class="menu-item">
+        <a href="/#off-road-tour-section" class="menu-item__link">Туры</a>
+      </div>
+      <div class="menu-item">
+        <a href="/#our-cars-section" class="menu-item__link">Автопарк</a>
+      </div>
+      <div class="menu-item">
+        <a href="/#contacts-section" class="menu-item__link">Контакты</a>
+      </div>
+    </div>
+    <div class="phone">
+      <a href="tel:+79080794770" class="phone-link">+7 908 07 94 770</a>
+    </div>
+    <div class="messengers">
+      <div class="messenger-item whatsapp">
+        <div class="flex-container">
+          <span class="title">WhatsApp</span>
+          <svg width="38" height="38" viewBox="0 0 100 100" class="arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_18_413)">
+            <path d="M50 87.5C70.7107 87.5 87.5 70.7107 87.5 50C87.5 29.2893 70.7107 12.5 50 12.5C29.2893 12.5 12.5 29.2893 12.5 50C12.5 70.7107 29.2893 87.5 50 87.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34.375 50H65.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M53.125 37.5L65.625 50L53.125 62.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_18_413">
+            <rect width="100" height="100" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <a href="https://wa.me/79048175176" class="full-link"></a>
+      </div>
+      <div class="messenger-item telegram">
+        <div class="flex-container">
+          <span class="title">Telegram</span>
+          <svg width="38" height="38" viewBox="0 0 100 100" class="arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_18_414)">
+            <path d="M50 87.5C70.7107 87.5 87.5 70.7107 87.5 50C87.5 29.2893 70.7107 12.5 50 12.5C29.2893 12.5 12.5 29.2893 12.5 50C12.5 70.7107 29.2893 87.5 50 87.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34.375 50H65.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M53.125 37.5L65.625 50L53.125 62.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_18_414">
+            <rect width="100" height="100" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <a href="https://t.me/es_dmitriev" class="full-link"></a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="callback-modal" class="modal-window callback-modal">
+    <div class="modal-wrapper">
+      <div class="modal-area">
+        <div class="modal-close">
+          <div class="close"></div>
+        </div>
+
+        <div class="flex-container">
+          <div class="title-wrapper">
+            <div class="title">Оставьте свои данные для <span class="orangecolor">брони тура</span></div>
+            <div class="subtitle">После отправки данных с вами свяжется менеджер и уточнит все детали</div>
+          </div>
+          <form id="callback-modal-form" class="form" method="post">
+            <input type="text" id="callback-name" class="name input-field first-input-field js-required-name" autocomplete="on" name="name" minlength="3" maxlength="20" required placeholder="имя*">
+            <input type="text" id="callback-phone" class="phone input-field js-required-phone" name="phone" autocomplete="on" minlength="17" maxlength="19" required placeholder="номер телефона*">
+            <div class="form-group">
+              <div class="radio-wrapper">
+                <span class="radio-text">WhatsApp</span>
+                <input type="radio" name="messenger" id="radio-whatsapp" class="custom-radio" value="whatsapp">
+                <label for="radio-whatsapp" class="custom-radio-label"></label>
+              </div>
+              <div class="radio-wrapper">
+                <span class="radio-text">Telegram</span>
+                <input type="radio" name="messenger" id="radio-telegram" class="custom-radio" value="telegram">
+                <label for="radio-telegram" class="custom-radio-label"></label>
+              </div>
+            </div>
+
+            <input type="number" id="callback-quantity" class="input-number input-field" name="quantity" min="1" max="20" placeholder="количество людей">
+                        
+            <button type="button" class="submit-btn js-callback-modal-btn">забронировать тур</button>
+
+            <input type="checkbox" name="checkbox" class="custom-checkbox js-required-checkbox" id="checkbox-callback-modal" checked required onchange="document.querySelector('.js-callback-modal-btn').disabled = !this.checked;">
+            <label for="checkbox-callback-modal" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Согласен с <a href="/privacy-policy.html" class="privacy-policy-btn" rel="nofollow" target="_blank">политикой обработки персональных данных</a></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie_note" class="we-use-cookie">
+    <div class="we-use-cookie-wrapper">
+      <div class="we-use-cookie-text">Этот сайт использует cookie-файлы и другие технологии для улучшения его работы. Продолжая работу с сайтом, вы разрешаете использование cookie-файлов.</div>
+      <button id="cookie_accept" class="we-use-cookie-close">ОК</button>
+    </div>
+  </div>
+
+  <script src="js/app.min.js"></script>
+
+</body>
+</html>
