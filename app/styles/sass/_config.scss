@@ -1,12 +1,13 @@
 // USER VARIABLES SECTION
 
-$basiccolor: #10171B; // Basic Color
-$orangecolor: #FF7A03; // Orange Color
-$greencolor: #54820A; // Green Color
+$basiccolor: #1E1E1E; // Basic Color
+$browncolor: #C19B76; // Brown Color
+$whitecolor: #FFFFFF; // White Color
+$beigecolor: #FFF9F3; // Beige Color
 $fontsize: 16px; // Font Size
-$textcolor: #10171B; // Text Color
+$textcolor: #1E1E1E; // Text Color
 $lineheight: 1.4; // Document Line Height
-$userfont: 'Unbounded', sans-serif; // User Font Family
+$userfont: 'montserrat-regular', sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -51,10 +52,12 @@ $gutter: $grid-gutter-width;
   }
 }
 
-@include font('unbounded-light', normal, 400, '../fonts/unbounded-light.woff2');
-@include font('unbounded', normal, 400, '../fonts/unbounded-regular.woff2');
-@include font('unbounded-medium', normal, 400, '../fonts/unbounded-medium.woff2');
-@include font('unbounded-bold', normal, 400, '../fonts/unbounded-bold.woff2');
+@include font('cormorant-light', normal, 400, '../fonts/Cormorant-Light.woff2');
+@include font('cormorant-medium', normal, 400, '../fonts/Cormorant-Medium.woff2');
+@include font('cormorant-semibold', normal, 400, '../fonts/Cormorant-SemiBold.woff2');
+@include font('montserrat-light', normal, 400, '../fonts/Montserrat-Light.woff2');
+@include font('montserrat-regular', normal, 400, '../fonts/Montserrat-Regular.woff2');
+@include font('montserrat-medium', normal, 400, '../fonts/Montserrat-Medium.woff2');
 
 // GENERAL DOCUMENT STYLES
 
