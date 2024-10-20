@@ -1,5 +1,6 @@
 import IMask from 'imask';
-
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
 // Общие переменные
 const body = document.querySelector('body');
@@ -145,6 +146,26 @@ if (callbackModalFormBtn) {
   callbackModalFormBtn.onclick = function() {
     ajaxCallback(callbackModalForm);
   }
+}
+
+
+// Slider
+const mainSlider = document.querySelector('.interior-slider')
+
+if (mainSlider) {
+  const slider = new Swiper('.interior-slider', {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 }
 
 
