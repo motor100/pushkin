@@ -75,35 +75,8 @@ img {
 // header
 .header {
   padding: 20px 0;
-  .logo-wrapper {
-    display: flex;
-    width: 295px;
-    height: 80px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logo-text {
-    text-align: center;
-  }
-  .logo-text .name {
-    font-family: 'cormorant-light';
-    font-size: 32px;
-    color: $browncolor;
-    line-height: 1;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-  }
-  .logo-text .restaurant {
-    font-family: 'montserrat-light';
-    font-size: 20px;
-    color: $browncolor;
-    line-height: 1;
-  }
-  
-}  
+} 
 
-// main section
 .main-section {
   height: 760px;
   padding: 80px 0 75px 0;
@@ -135,7 +108,7 @@ img {
     line-height: 1;
   }
   .booking-btn {
-    display: block;
+    display: flex;
     width: 492px;
     height: 100px;
     margin: 0 auto 80px auto;
@@ -146,6 +119,8 @@ img {
     font-size: 32px;
     color: $whitecolor;
     text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
   }
   .contacts {
     display: flex;
@@ -463,6 +438,11 @@ img {
     color: $browncolor;
     text-transform: uppercase;
     cursor: pointer;
+    transition: border .3s, color .3s;
+  }
+  .center .submit-btn:hover {
+    border: 1px solid $basiccolor;
+    color: $basiccolor;
   }
   .center .submit-btn:disabled {
     color: grey;
@@ -473,6 +453,90 @@ img {
 
 }
 
+.contacts-section {
+  padding: 100px 0 60px 0;
+  background-color: $beigecolor;
+  .title {
+    margin: 0 0 30px 0;
+    font-family: cormorant-semibold;
+    font-size: 64px;
+    color: $browncolor;
+    line-height: 1.1;
+  }
+  .address-item {
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  .address-item .name {
+    font-family: 'montserrat-medium';
+    color: $browncolor;
+  }
+  .address-item .text {
+    color: #CFB8A1;
+  }
+  .socials-link {
+    margin: 0 20px 0 0;
+  }
+}
+
+.horizontal-line {
+  height: 1px;
+  background-color: $browncolor;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: $beigecolor;
+  .double-logo {
+    margin-bottom: 18px;
+  }
+  .footer-content {
+    font-size: 18px;
+    text-align: center;
+  }
+  .footer-content-item {
+    margin: 0 0 30px 0;
+  }
+  .privacy-policy {
+    display: block;
+    color: $basiccolor;
+    text-decoration: underline;
+  }
+  .author {
+    margin: 0 0 8px 0;
+  }
+  .author a {
+    color: $basiccolor;
+  }
+
+}
+
+.double-logo {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  .logo-text {
+    text-align: center;
+  }
+  .logo-text .name {
+    font-family: 'cormorant-light';
+    font-size: 32px;
+    color: $browncolor;
+    line-height: 1;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+  .logo-text .restaurant {
+    font-family: 'montserrat-light';
+    font-size: 20px;
+    color: $browncolor;
+    line-height: 1;
+  }
+}
 
 /* agreement text галочка соглашения */
 .agreement-text {
