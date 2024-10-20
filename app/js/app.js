@@ -170,7 +170,7 @@ if (mainSlider) {
 
 
 // Input mask
-const elementPhone = document.querySelector('#callback-phone');
+const elementPhone = document.querySelector('.js-input-phone-mask');
 
 const maskOptionsPhone = {
   mask: '+{7} (000) 000 00 00'

@@ -206,6 +206,49 @@
     </div>
   </div>
 
+  <div class="booking-section">
+    <div class="container">
+      <div class="top-border"></div>
+      <div class="booking-content">
+        <div class="left">
+          <div class="logo">
+            <img src="images/booking-logo.svg" alt="">
+          </div>
+          <div class="name">Пушкин</div>
+          <div class="image">
+            <img src="images/booking-left-image.jpg" alt="">
+          </div>
+        </div>
+        <div class="center">
+          <div class="title">Забронируйте столик</div>
+          <div class="text">Заполните форму и мы свяжемся с вами в течении 5 минут для подтверждения брони</div>
+          <form action="" class="form">
+            <div class="form-group">
+              <label for="name" class="label">Ваше имя</label>
+              <input type="text" name="name" id="name" class="input-field js-required-name" autocomplete="on" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="label">Ваш телефон</label>
+              <input type="text" name="phone" id="phone" class="input-field js-required-phone js-input-phone-mask" placeholder="+7 (900) 000 00 00" autocomplete="on" required>
+            </div>
+            <div class="agreement-text">
+              <input type="checkbox" id="checkbox" name="checkbox" class="custom-checkbox js-required-checkbox" checked onchange="document.getElementById('booking-submit-btn').disabled = !this.checked;">
+              <label for="checkbox" class="custom-checkbox-label"></label>
+              <span>Нажимая кнопку вы соглашаетесь с <a href="/privacy-policy.html" target="_blank">политикой обработки данных</a></span>
+            </div>
+            <button id="booking-submit-btn" class="submit-btn">Забронировать стол</button>
+          </form>
+        </div>
+        <div class="right">
+          <div class="image">
+            <img src="images/booking-right-image.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bottom-border"></div>
+    </div>
+  </div>
+
 
   <div id="contacts-section" class="contacts-section">
     <div class="container">
