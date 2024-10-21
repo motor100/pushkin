@@ -51,7 +51,8 @@
           </div>
           <div class="contacts-item">
             <img src="images/phone.svg" class="contacts-item__image" alt="">
-            <span class="contacts-item__text">+7 952 503 27 00</span>
+            <!-- <span class="contacts-item__text">+7 952 503 27 00</span> -->
+            <a href="tel:+79525032700" class="contacts-item__text">+7 952 503 27 00</a>
           </div>
         </div>
       </div>
@@ -205,7 +206,7 @@
         <div class="center">
           <div id="booking-title" class="title">Забронируйте столик</div>
           <div class="text">Заполните форму и мы свяжемся с вами в течении 5 минут для подтверждения брони</div>
-          <form class="form">
+          <form id="booking-form" class="form">
             <div class="form-group">
               <label for="name" class="label">Ваше имя</label>
               <input type="text" name="name" id="name" class="input-field js-required-name" autocomplete="on" minlength="3" maxlength="20" required>
@@ -219,7 +220,7 @@
               <label for="checkbox" class="custom-checkbox-label"></label>
               <span>Нажимая кнопку вы соглашаетесь с <a href="/privacy-policy.html" target="_blank">политикой обработки данных</a></span>
             </div>
-            <button id="booking-submit-btn" class="submit-btn">Забронировать стол</button>
+            <button type="button" id="booking-submit-btn" class="submit-btn">Забронировать стол</button>
           </form>
         </div>
         <div class="right">
@@ -248,7 +249,8 @@
             </div>
             <div class="address-item">
               <span class="name">Телефон:</span>
-              <span class="text">+7 (952) 503 27 00</span>
+              <!-- <span class="text">+7 952 503 27 00</span> -->
+              <a href="tel:+79525032700" class="text">+7 952 503 27 00</a>
             </div>
             <div class="socials">
               <a href="#" class="socials-link" target="_blank">
@@ -265,7 +267,7 @@
         </div>
         <div class="col-md-6">
           <div class="map">
-            <img src="images/map.jpg" alt="">
+            <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69b8b41741d857c4624316611ce81ae52849a18c06bc66516c29979fceb95197&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
         </div>
       </div>
@@ -285,8 +287,10 @@
     </div>
     <div class="footer-content">
       <div class="container">
-        <a href="/privacy-policy.html" class="privacy-policy footer-content-item" target="_blank">Политика конфиденциальности</a>
-        <div class="copyright footer-content-item">© <span id="current-year"></span>, Челябинская СС ИНН 7415086375</div>
+        <div class="footer-content-item">
+          <a href="/privacy-policy.html" class="privacy-policy" target="_blank">Политика конфиденциальности</a>
+        </div>
+        <div class="copyright footer-content-item">© <span id="current-year"></span> Челябинская СС ИНН 7415086375</div>
         <div class="author">
           <a href="https://nhfuture.ru/" target="_blank">Дизайн Andrewwebnh</a>
         </div>
@@ -361,47 +365,6 @@
           </svg>
         </div>
         <a href="https://t.me/es_dmitriev" class="full-link"></a>
-      </div>
-    </div>
-  </div>
-  
-  <div id="callback-modal" class="modal-window callback-modal">
-    <div class="modal-wrapper">
-      <div class="modal-area">
-        <div class="modal-close">
-          <div class="close"></div>
-        </div>
-
-        <div class="flex-container">
-          <div class="title-wrapper">
-            <div class="title">Оставьте свои данные для <span class="orangecolor">брони тура</span></div>
-            <div class="subtitle">После отправки данных с вами свяжется менеджер и уточнит все детали</div>
-          </div>
-          <form id="callback-modal-form" class="form" method="post">
-            <input type="text" id="callback-name" class="name input-field first-input-field js-required-name" autocomplete="on" name="name" minlength="3" maxlength="20" required placeholder="имя*">
-            <input type="text" id="callback-phone" class="phone input-field js-required-phone" name="phone" autocomplete="on" minlength="17" maxlength="19" required placeholder="номер телефона*">
-            <div class="form-group">
-              <div class="radio-wrapper">
-                <span class="radio-text">WhatsApp</span>
-                <input type="radio" name="messenger" id="radio-whatsapp" class="custom-radio" value="whatsapp">
-                <label for="radio-whatsapp" class="custom-radio-label"></label>
-              </div>
-              <div class="radio-wrapper">
-                <span class="radio-text">Telegram</span>
-                <input type="radio" name="messenger" id="radio-telegram" class="custom-radio" value="telegram">
-                <label for="radio-telegram" class="custom-radio-label"></label>
-              </div>
-            </div>
-
-            <input type="number" id="callback-quantity" class="input-number input-field" name="quantity" min="1" max="20" placeholder="количество людей">
-                        
-            <button type="button" class="submit-btn js-callback-modal-btn">забронировать тур</button>
-
-            <input type="checkbox" name="checkbox" class="custom-checkbox js-required-checkbox" id="checkbox-callback-modal" checked required onchange="document.querySelector('.js-callback-modal-btn').disabled = !this.checked;">
-            <label for="checkbox-callback-modal" class="custom-checkbox-label"></label>
-            <span class="checkbox-text">Согласен с <a href="/privacy-policy.html" class="privacy-policy-btn" rel="nofollow" target="_blank">политикой обработки персональных данных</a></span>
-          </form>
-        </div>
       </div>
     </div>
   </div>

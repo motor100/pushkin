@@ -94,8 +94,8 @@ function modalClose(win) {
 
 
 // Отправка формы ajax
-const callbackModalForm = document.querySelector("#callback-modal-form");
-const callbackModalFormBtn = document.querySelector('.js-callback-modal-btn');
+const bookingForm = document.querySelector("#booking-form");
+const bookingSubmitBtn = document.querySelector('#booking-submit-btn');
 
 function ajaxCallback(form) {
 
@@ -142,9 +142,9 @@ function ajaxCallback(form) {
   return false;
 }
 
-if (callbackModalFormBtn) {
-  callbackModalFormBtn.onclick = function() {
-    ajaxCallback(callbackModalForm);
+if (bookingSubmitBtn) {
+  bookingSubmitBtn.onclick = function() {
+    ajaxCallback(bookingForm);
   }
 }
 
@@ -162,21 +162,24 @@ if (mainSlider) {
       nextEl: '.swiper-next',
       prevEl: '.swiper-prev',
     },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    // },
   });
 }
 
 
 // Input mask
-const elementPhone = document.querySelector('.js-input-phone-mask');
+function inputPhoneMask() {
+  const elementPhone = document.querySelectorAll('.js-input-phone-mask');
 
-const maskOptionsPhone = {
-  mask: '+{7} (000) 000 00 00'
-};
+  const maskOptionsPhone = {
+    mask: '+{7} (000) 000 00 00'
+  };
 
-const mask = IMask(elementPhone, maskOptionsPhone);
+  elementPhone.forEach((item) => {
+    const mask = IMask(item, maskOptionsPhone);
+  });
+}
+
+inputPhoneMask();
 
 
 // Current year
