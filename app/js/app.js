@@ -162,9 +162,9 @@ if (mainSlider) {
       nextEl: '.swiper-next',
       prevEl: '.swiper-prev',
     },
-    pagination: {
-      el: ".swiper-pagination",
-    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
   });
 }
 

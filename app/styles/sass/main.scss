@@ -105,7 +105,7 @@ img {
     font-family: 'montserrat-light';
     font-size: 32px;
     color: $whitecolor;
-    line-height: 1;
+    line-height: 1.2;
   }
   .booking-btn {
     display: flex;
@@ -129,6 +129,9 @@ img {
   .contacts .contacts-item {
     display: flex;
     align-items: center;
+  }
+  .contacts-item__image {
+    width: 86px;
   }
   .contacts .contacts-item__text {
     font-family: 'montserrat-medium';
@@ -159,15 +162,25 @@ img {
   }
   .about-content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   .about-content-logo {
+    width: 30%;
     text-align: center;
+    flex-shrink: 0;
+  }
+  .about-content-logo .logo {
+    width: 86px;
+    margin: 0 auto;
+  }
+  .about-content-logo .logo img {
+    width: 100%;
   }
   .about-content-logo .name {
     margin: 0 0 10px 0;
     font-family: 'cormorant-medium';
-    font-size: 86px;
+    font-size: 68px;
     color: $browncolor;
     line-height: 1;
     letter-spacing: .12em;
@@ -175,9 +188,12 @@ img {
   }
   .about-content-logo .text {
     font-family: 'montserrat-light';
-    font-size: 24px;
+    font-size: 22px;
     color: $basiccolor;
     line-height: 1.1;
+  }
+  .about-content-description {
+    padding: 0 20px;
   }
   .about-content-description .title {
     margin: 0 0 40px 0;
@@ -187,8 +203,15 @@ img {
     line-height: 1.1;
   }
   .about-content-description .text {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1.1;
+  }
+  .about-content-image {
+    width: 25%;
+    flex-shrink: 0;
+  }
+  .about-content-image img {
+    width: 100%;
   }
 }
 
@@ -203,7 +226,7 @@ img {
     line-height: 1.1;
   }
   .kitchen-description .text {
-    font-size: 28px;
+    font-size: 26px;
   }
   .kitchen-image {
     padding: 0 20px;
@@ -212,7 +235,7 @@ img {
     width: 100%;
   }
   .breakfast-text .text {
-    font-size: 28px;
+    font-size: 26px;
   }
   .breakfast {
     height: 372px;
@@ -245,7 +268,7 @@ img {
   }
   .chief-description {
     font-size: 28px;
-    line-height: 1.1;
+    line-height: 1.3;
   }
 }
 
@@ -265,7 +288,7 @@ img {
     line-height: 1.1;
   }
   .interior-slider-wrapper {
-    margin-left: 312px;
+    margin-left: calc(50% - 1296px / 2);
   }
   .interior-slider-item {
     width: 28%;
@@ -399,7 +422,7 @@ img {
     font-family: cormorant-semibold;
     font-size: 56px;
     color: $browncolor;
-    line-height: 1.1;
+    line-height: 1;
   }
   .center .text {
     margin: 0 0 40px 0;
@@ -450,6 +473,9 @@ img {
   .right {
     width: 55%;
   }
+  .right .image img {
+    width: 100%;
+  }
 
 }
 
@@ -477,6 +503,10 @@ img {
   }
   .socials-link {
     margin: 0 20px 0 0;
+  }
+  // temp
+  .map img {
+    width: 100%;
   }
 }
 
@@ -565,7 +595,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60% 60%;
-  background-color: #fff;
+  background-color: $lightcolor;
 }
 .agreement-text .custom-checkbox:checked+label::before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -997,6 +1027,90 @@ img {
 }
 
 @media only screen and (max-width : 1400px) {
+
+  .main-section {
+    .logo-text .name {
+      font-size: 82px;
+    }
+    .contacts-item__image {
+      width: 70px;
+    }
+    .contacts .contacts-item__text {
+      font-size: 21px;
+    }
+    .booking-btn {
+      width: 482px;
+      height: 90px;
+      font-size: 30px;
+    }
+  
+  }
+
+  .about-section {
+    .about-content-logo .name {
+      font-size: 60px;
+    }
+    .about-content-logo .text {
+      font-size: 20px;
+    }
+    .about-content-description .title {
+      font-size: 62px;
+    }
+    .about-content-description .text {
+      font-size: 21px;
+    }
+  }
+
+  .kitchen-section {
+    .kitchen-description .title {
+      margin: 0 0 30px 0;
+      font-size: 62px;
+    }
+    .kitchen-description .text {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+    .breakfast-text .text {
+      font-size: 24px;
+    }
+    .chief-title {
+      font-size: 62px;
+    }
+    .chief-name {
+      margin: 0 0 50px 0;
+    }
+    .chief-description {
+      font-size: 26px;
+    }
+
+  }
+
+  .interior-section {
+    .section-title {
+      font-size: 84px;
+    }
+    .interior-slider-wrapper {
+      margin-left: calc(50% - 1116px / 2);
+    }
+  }
+
+  .booking-section {
+    .center .title {
+      font-size: 52px;
+    }
+    .right {
+      width: 61%;
+    }
+  }
+
+  .contacts-section {
+    .title {
+      font-size: 60px;
+    }
+    .address-item {
+      font-size: 25px;
+    }
+  }
 
 }
 
