@@ -118,6 +118,11 @@ img {
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
+    transition: background-color .3s, color .3s;
+  }
+  .booking-btn:hover {
+    background-color: $whitecolor;
+    color: $browncolor;
   }
   .contacts {
     display: flex;
